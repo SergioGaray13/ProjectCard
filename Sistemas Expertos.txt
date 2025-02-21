@@ -1,0 +1,97 @@
+Lenguaje Declarativo 
+Lenguaje Imperativo
+
+Astro.js
+Next.js
+codi.link
+
+
+Web components:
+	Props
+
+Etiquetas:
+Nombre
+Atributo 
+Valores
+
+header.astro
+Optimizacion de recursos de un navegador
+
+Layout.astro
+
+Sidebar.astro->Importacion de dastos
+
+Estructura de datos: Typescript
+Titulo: title
+Ruta: href
+Tipo de dato: subitems:? ->Arreglo
+
+Src
+	components
+		data
+		projects
+			.mdx
+				title:
+				description
+				icon
+
+	pages
+		projects
+				slug.astro
+					import
+					export
+					interface
+						entry
+							slug
+							data
+								title 
+								description
+								icon
+							render
+			index.astro
+			projects.astro
+				import
+				interface
+					slug
+					title
+
+
+BD
+	Estrella
+	Copo de nieve
+
+CloudFlare
+	Compute (workers)
+		Workers & Pages
+			Create
+				Pages
+					Connect to GitHub
+						Escogemos el repositorio
+						Begin Setup
+							Project Name:
+							Project Branch:DevOps
+							Frameworks->Astro
+								npm run build
+								build output directory:/dist
+
+
+	Sites statics
+
+
+DevOps
+Release
+	Máquina local
+		|Pull
+		|PUSH
+	GitHub
+		|webhook
+		|
+	CloudFlare
+		|
+		|
+	   VM Agente (Artefacto Build)
+	    | Dist
+	    |
+	   VM: Servidor Web->Sitio Estático
+
+2 servidores y 2 VM y un equipo local
