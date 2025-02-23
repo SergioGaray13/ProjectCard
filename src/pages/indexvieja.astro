@@ -1,0 +1,35 @@
+---
+// src/pages/index.astro
+import Layout from '../layouts/Layout.astro'; 
+import ProjectCard from '../components/ProjectCard.astro';
+import { getCollection } from 'astro:content';
+
+const projects = await getCollection('projects');
+console.log(projects);  // Verifica en la consola del navegador
+
+---
+
+<Layout>
+  <h2>Proyectos</h2>
+  <div class="project-list">
+    {projects.map((project) => (
+      <ProjectCard
+        title={project.data.title}
+        description={project.data.description}
+        tags={project.data.tags}
+        image={project.data.image}
+        url={project.data.url}
+        techStack={project.data.techStack}
+        slug={project.data.slug || ''} 
+      />
+    ))}
+  </div>
+</Layout>
+
+<style>
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+</style>

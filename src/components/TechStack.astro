@@ -1,0 +1,25 @@
+---
+export let stack: string[];
+---
+
+<ul class="tech-stack">
+  {stack.map((tech) => (
+    <li>{tech}</li>
+  ))}
+</ul>
+
+<style>
+  .tech-stack {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+  }
+  .tech-stack li {
+    background: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+</style>

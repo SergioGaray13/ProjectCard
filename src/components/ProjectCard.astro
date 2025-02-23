@@ -1,0 +1,48 @@
+---
+// src/components/ProjectCard.astro
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+  title: string;
+  description: string;
+  tags: string[];
+  image?: ImageMetadata | string;  // Actualizamos el tipo
+  url: string;
+  techStack: string[];
+  slug: string;
+}
+
+const { title, description, tags, image, url, techStack,slug } = Astro.props as Props;
+
+// Obtener la URL de la imagen
+const imageUrl = typeof image === 'string' ? image : image?.src;
+---
+
+<article class="project-card">
+  <a href={`/info/${slug}`} class="card-link">
+    <div class="image-container" style={`background-image: url(${imageUrl})`}>
+      <div class="overlay">
+        <div class="content">
+          <h3>{title}</h3>
+          <p>{description}</p>
+          <div class="tags">
+            {tags.map(tag => <span class="tag">{tag}</span>)}
+          </div>
+          <div class="tech-stack">
+            {techStack.map(tech => <span class="tech">{tech}</span>)}
+          </div>
+          <a 
+            href={url} 
+            class="view-project" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            onclick="event.stopPropagation()"
+          >
+            Ver proyecto
+          </a>
+        </div>
+      </div>
+    </div>
+  </a>
+</article>
+

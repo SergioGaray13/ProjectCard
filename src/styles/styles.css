@@ -1,0 +1,128 @@
+.project-card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-link {
+  text-decoration: none;
+  height: 100%;
+  display: block;
+}
+
+.image-container {
+  width: 100%;
+  min-height: 450px; /* Aumentado para dar más espacio al contenido */
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(224, 217, 217, 0.4),
+    rgba(0, 0, 0, 0.9)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem; /* Aumentado el padding */
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Aumentado el espacio entre elementos */
+  height: auto;
+  overflow: visible;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.5rem; /* Aumentado el tamaño */
+  color: white;
+  line-height: 1.2;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.tags, .tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem; /* Espacio entre tags */
+  margin: 0.5rem 0;
+}
+
+.tag {
+  background: rgba(255, 182, 193, 0.9);
+  color: #2c1810;
+  padding: 0.4rem 1rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease;
+}
+
+.tag:hover {
+  background: rgba(255, 192, 203, 1);
+}
+
+.tech {
+  background: rgba(176, 196, 222, 0.9);
+  color: #2c1810;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease;
+}
+
+.tech:hover {
+  background: rgba(176, 196, 222, 1);
+}
+
+.view-project {
+  display: inline-block;
+  background: rgba(66, 153, 225, 0.8);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  margin-top: 1rem; /* Añadido margen superior */
+  align-self: flex-start; /* Alinea el botón a la izquierda */
+}
+
+.view-project:hover {
+  background: rgba(49, 130, 206, 0.9);
+}
