@@ -5,6 +5,7 @@
 │   │   ├── AbstractNegro.png
 │   ├── nnneon.svg      # Imagen de fondo
 │   ├── favicon.ico
+│   ├── HOJA DE VIDA SERGIO GARAY.pdf
 │
 ├── 📂 src/             # Código fuente del sitio
 │   ├── 📂 assets/
@@ -13,8 +14,17 @@
 │   ├── 📂 components/  # Componentes reutilizables (Astro, React, Svelte, etc.)
 │   │   ├── ProjectCard.astro
 │   │   ├── Header.astro
+│   │   └── NavBar.astro
+│   │   └── ProfileImage.astro
 │   │   ├── Footer.astro
 │   │   └── Welcome.astro
+│   │
+│   ├── 📂 content/     # contenido markdown
+│   │   ├── 📂 projects/    #proyectos markdown
+│   │   │   ├── avamar.mdx
+│   │   │   ├── blog.mdx
+│   │   │   ├── compilador.mdx
+│   │   │   ├── portafolio.mdx
 │   │
 │   ├── 📂 layouts/     # Plantillas para páginas (estructura base)
 │   │   ├── Layout.astro
@@ -23,20 +33,17 @@
 │   │   ├── index.astro # Página principal → http://localhost:3000/
 │   │   ├── about.astro # Página "Acerca de" → http://localhost:3000/about
 │   │   ├── contact.astro
-│   │   └── blog.astro
+│   │   └── [slug].astro
 │   │
 │   ├── 📂 styles/      # Estilos CSS globales o específicos
-│   │   ├── global.css
-│   │   ├── project-card.css
-│   │   └── theme.css
+│   │   ├── styles.css
+│   │   ├── header.css
+│   │   ├── navbar.css
 │   │
 │   ├── 📂 images/      # (Opcional) Imágenes procesadas por Astro
 │   │
 │   ├── 📂 data/        # Datos en JSON o JavaScript para alimentar la web (opcional)
-│   │   ├── projects.ts
-│   │   ├── blogPosts.js
-│   │
-│   └── 📂 scripts/     # (Opcional) Scripts JS interactivos
+│   │   ├── data.json
 │
 ├── 📂 node_modules/    # Dependencias instaladas con npm/yarn/pnpm
 │

@@ -1,23 +1,39 @@
 ---
+// src/pages/about.astro
+import Layout from '../layouts/Layout.astro';
+import "../styles/navbar.css";
 
 const title = "Acerca de - Sergio Garay";
 const description = "Información sobre Sergio Garay, su trayectoria y habilidades.";
 ---
-<head>
-  <title>{title}</title>
-  <meta name="description" content={description} />
-</head>
 
-<main>
-  <section class="about-container">
-    <h1>Sobre Mí</h1>
-    <img src="/images/Perfil.jpeg" alt="Sergio Garay" class="profile-image" />
-    <p>
-      Soy Sergio Garay, un desarrollador con experiencia en Next.js, Astro y tecnologías web modernas.
-      Me apasiona la creación de proyectos eficientes y bien estructurados.
-    </p>
-    <p>
-      Si deseas conocer más sobre mi trabajo, puedes revisar mi <a href="/HOJA DE VIDA SERGIO GARAY.pdf">currículum</a>.
-    </p>
-  </section>
-</main>
+<Layout>
+  <div class="about-container">
+    <h1 class="title">Sobre Mí</h1>
+    <div class="profile-section">
+      <img src="/images/familia.jpeg" alt="Sergio Garay" class="profile-image" />
+      <div class="bio">
+        <p>
+          Soy Sergio Garay, un desarrollador con experiencia en Next.js, Astro y tecnologías web modernas.
+          Me apasiona la creación de proyectos eficientes y bien estructurados.
+          Soy especialista en Infraestructura de Hyper-v y VMWare.
+        </p>
+        <p>
+          Amo el anime y el manga desde niño.
+        </p>
+        <p>
+          Disfruto mis días al lado de una bella familia, mi esposa y mi hijo de 3 años, Jathniel.
+        </p>
+        <p>
+          Soy apasionado del fútbol desde temprana edad.
+        </p>
+        <p>
+          Amo los lugares fríos, así como el silencio de los bosques, y adoro bañarme en ríos y piscinas, pero no en el mar.
+        </p>
+        <p>
+          Si deseas conocer más sobre mi trabajo, puedes revisar mi <a href="/HOJA DE VIDA SERGIO GARAY.pdf" class="cv-link">currículum</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</Layout>

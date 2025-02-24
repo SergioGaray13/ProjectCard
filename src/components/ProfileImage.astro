@@ -1,0 +1,20 @@
+---
+const { src, alt } = Astro.props;
+---
+
+<img src={src} alt={alt} class="profile-image" />
+
+<style>
+  .profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .profile-image:hover {
+    transform: scale(1.1);
+  }
+</style>

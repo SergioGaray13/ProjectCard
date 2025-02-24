@@ -6,7 +6,7 @@ interface Props {
   title: string;
   description: string;
   tags: string[];
-  image?: ImageMetadata | string;  // Actualizamos el tipo
+  image?: ImageMetadata | string;
   url: string;
   techStack: string[];
   slug: string;
@@ -19,7 +19,7 @@ const imageUrl = typeof image === 'string' ? image : image?.src;
 ---
 
 <article class="project-card">
-  <a href={`/info/${slug}`} class="card-link">
+  <a href={`/projects/${slug}`} class="card-link">
     <div class="image-container" style={`background-image: url(${imageUrl})`}>
       <div class="overlay">
         <div class="content">

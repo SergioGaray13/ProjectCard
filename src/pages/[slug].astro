@@ -1,32 +1,36 @@
 ---
+// src/pages/projects/[slug].astro
 import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 
-export async function getStaticPaths() {
-  const projects = await getCollection('projects');
+// Obtener el slug desde la URL
+const { slug } = Astro.params;
 
-  return projects.map((project) => ({
-    params: { slug: project.data.slug }, 
-    props: { project },
-  }));
+// Obtener todos los proyectos desde el contenido
+const projects = await getCollection('projects');
+
+// Buscar el proyecto correspondiente
+const project = projects.find((p) => p.data.slug === slug);
+
+if (!project) {
+  return Astro.redirect("/404"); // Redirigir si no se encuentra el proyecto
 }
 
-// Obtener el proyecto usando `Astro.props`
-const { project } = Astro.props;
+const { title, description, techStack, url } = project.data;
 ---
 
 <Layout>
   <article>
-    <h2>{project.data.title}</h2>
-    <p>{project.data.description}</p>
+    <h2>{title}</h2>
+    <p>{description}</p>
     <div>
       <h4>Technologías utilizadas:</h4>
       <ul>
-        {project.data.techStack.map((tech) => (
+        {techStack.map((tech) => (
           <li>{tech}</li>
         ))}
       </ul>
     </div>
-    <a href={project.data.url} target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+    <a href={url} target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
   </article>
 </Layout>
