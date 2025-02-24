@@ -6,6 +6,5 @@ export default defineConfig({
   integrations: [mdx()],
   collections: {
     projects: '../content/projects/*.mdx',  // Ajusta la ruta a la carpeta de proyectos
-    info: '../content/info/*.mdx',
   },
 });
