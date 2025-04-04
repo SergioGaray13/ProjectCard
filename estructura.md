@@ -1,6 +1,6 @@
 📂 mi-portafolio/
 ├── 📂 public/          # Archivos estáticos (imágenes, fuentes, favicon, etc.)
-│   ├── 📂 images/      # Imágenes accesibles directamente desde la web
+│   ├── 📂 images/      # Imágenes accesibles
 │   │   ├── Abstractgris.jpeg
 │   │   ├── AbstractNegro.png
 │   ├── nnneon.svg      # Imagen de fondo
@@ -10,35 +10,41 @@
 ├── 📂 src/             # Código fuente del sitio
 │   ├── 📂 assets/
 │   │   ├── astro.svg
-│   │   ├── background.svg
-│   ├── 📂 components/  # Componentes reutilizables (Astro, React, Svelte, etc.)
-│   │   ├── ProjectCard.astro
-│   │   ├── Header.astro
-│   │   └── NavBar.astro
-│   │   └── ProfileImage.astro
+│   │   └── background.svg
+│   ├── 📂 components/  # Componentes reutilizables (Astro)
 │   │   ├── Footer.astro
+│   │   ├── Header.astro
+│   │   ├── NavBar.astro
+│   │   ├── ProfileImage.astro
+│   │   ├── ProjectCard.astro
 │   │   └── Welcome.astro
 │   │
 │   ├── 📂 content/     # contenido markdown
 │   │   ├── 📂 projects/    #proyectos markdown
+│   │   │   ├── algoritmos.mdx
 │   │   │   ├── avamar.mdx
 │   │   │   ├── blog.mdx
 │   │   │   ├── compilador.mdx
-│   │   │   ├── portafolio.mdx
+│   │   │   └── portafolio.mdx
 │   │
 │   ├── 📂 layouts/     # Plantillas para páginas (estructura base)
-│   │   ├── Layout.astro
+│   │   └── Layout.astro
 │   │
 │   ├── 📂 pages/       # Páginas del sitio (cada archivo aquí es una URL)
-│   │   ├── index.astro # Página principal → http://localhost:3000/
+│   │   ├── 📂 projects/
+│   │   │   └── [slug].astro
+│   │   ├── 404.astro # Error 404
 │   │   ├── about.astro # Página "Acerca de" → http://localhost:3000/about
-│   │   ├── contact.astro
-│   │   └── [slug].astro
+│   │   ├── contacts.astro
+│   │   └── index.astro # Página principal → http://localhost:3000/
 │   │
 │   ├── 📂 styles/      # Estilos CSS globales o específicos
-│   │   ├── styles.css
+│   │   ├── contacts.css
+│   │   ├── navbar.css
 │   │   ├── header.css
 │   │   ├── navbar.css
+│   │   ├── project.css
+│   │   └── styles.css
 │   │
 │   ├── 📂 images/      # (Opcional) Imágenes procesadas por Astro
 │   │
@@ -49,5 +55,6 @@
 │
 ├── astro.config.mjs    # Configuración de Astro
 ├── package.json        # Dependencias y scripts npm
-├── tsconfig.json       # Configuración de TypeScript (si usas TS)
-└── README.md           # Información del proyecto
+├── package-lock.json
+├── README.md           # Información del proyecto
+└── tsconfig.json       # Configuración de TypeScript (si usas TS)
