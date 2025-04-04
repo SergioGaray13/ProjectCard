@@ -10,7 +10,7 @@ console.log(projects);  // Verifica en la consola del navegador
 ---
 
 <Layout>
-  <h2>Proyectos</h2>
+  <h2 class="titulo-proyectos">Proyectos</h2>
   <div class="project-list">
     {projects.map((project) => (
       <ProjectCard
@@ -27,9 +27,34 @@ console.log(projects);  // Verifica en la consola del navegador
 </Layout>
 
 <style>
+  .titulo-proyectos {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 800;
+    background: linear-gradient(270deg, #00c9ff, #92fe9d, #00c9ff);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: moverFondo 5s ease infinite;
+  }
+
+  @keyframes moverFondo {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
   .project-list {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
   }
 </style>
