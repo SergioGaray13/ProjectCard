@@ -1,49 +1,119 @@
-# Astro Starter Kit: Basics
+# 🧠 Portafolio de Proyecto - Sistema Experto
 
-```sh
-npm create astro@latest -- --template basics
-```
+Este repositorio forma parte de mi portafolio personal y presenta un proyecto de **Sistema Experto** desarrollado como parte de mis estudios en Ingeniería en Sistemas. El sistema tiene como objetivo simular el razonamiento de un experto para brindar recomendaciones y tomar decisiones dentro de un dominio específico.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 📌 Descripción del Proyecto
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+El sistema experto fue diseñado para **[describe el dominio, por ejemplo: diagnosticar enfermedades comunes, recomendar soluciones técnicas, evaluar riesgo financiero, etc.]**. Utiliza una base de conocimientos y un motor de inferencia para proporcionar respuestas lógicas en función de las reglas establecidas.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## 🚀 Funcionalidades
 
-## 🚀 Project Structure
+- ✅ Interfaz amigable para el usuario
+- 📚 Base de conocimientos editable
+- 🔍 Razonamiento lógico basado en reglas
+- 🧩 Motor de inferencia hacia adelante y/o hacia atrás
+- 📝 Explicación del razonamiento del sistema
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🛠️ Tecnologías Utilizadas
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
+- Lenguaje: **[Next.js/ CSS / Astro / TypeScript]**
+- Frameworks: **[Ejemplo: TailWinds, Markdown]**
+- Herramientas: **[]**
+- Otros: **[Ejemplo: HTML, CSS, JSON, etc.]**
+
+## 📂 Estructura del Proyecto
+📂 mi-portafolio/
+├── 📂 public/          # Archivos estáticos (imágenes, fuentes, favicon, etc.)
+│   ├── 📂 images/      # Imágenes accesibles
+│   │   ├── Abstractgris.jpeg
+│   │   ├── AbstractNegro.png
+│   ├── nnneon.svg      # Imagen de fondo
+│   ├── favicon.ico
+│   ├── HOJA DE VIDA SERGIO GARAY.pdf
+│
+├── 📂 src/             # Código fuente del sitio
+│   ├── 📂 assets/
+│   │   ├── astro.svg
+│   │   └── background.svg
+│   ├── 📂 components/  # Componentes reutilizables (Astro)
+│   │   ├── Footer.astro
+│   │   ├── Header.astro
+│   │   ├── NavBar.astro
+│   │   ├── ProfileImage.astro
+│   │   ├── ProjectCard.astro
+│   │   └── Welcome.astro
+│   │
+│   ├── 📂 content/     # contenido markdown
+│   │   ├── 📂 projects/    #proyectos markdown
+│   │   │   ├── algoritmos.mdx
+│   │   │   ├── avamar.mdx
+│   │   │   ├── blog.mdx
+│   │   │   ├── compilador.mdx
+│   │   │   ├── portafolio.mdx
+│   │   │   └── terraform.mdx
+│   │
+│   ├── 📂 layouts/     # Plantillas para páginas (estructura base)
 │   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+│   │
+│   ├── 📂 pages/       # Páginas del sitio (cada archivo aquí es una URL)
+│   │   ├── 📂 projects/
+│   │   │   └── [slug].astro
+│   │   ├── 404.astro # Error 404
+│   │   ├── about.astro # Página "Acerca de" → http://localhost:4321/about
+│   │   ├── contacts.astro # Página "Contacto" → http://localhost:4321/contacts
+│   │   └── index.astro # Página principal → http://localhost:4321/
+│   │
+│   ├── 📂 styles/      # Estilos CSS globales o específicos
+│   │   ├── contacts.css
+│   │   ├── navbar.css
+│   │   ├── header.css
+│   │   ├── navbar.css
+│   │   ├── project.css
+│   │   └── styles.css
+│   │
+│   ├── 📂 images/      # (Opcional) Imágenes procesadas por Astro
+│   │
+│   ├── 📂 data/        # Datos en JSON o JavaScript para alimentar la web (opcional)
+│   │   ├── data.json
+│
+├── 📂 node_modules/    # Dependencias instaladas con npm/yarn/pnpm
+│
+├── astro.config.mjs    # Configuración de Astro
+├── package.json        # Dependencias y scripts npm
+├── package-lock.json
+├── README.md           # Información del proyecto
+└── tsconfig.json       # Configuración de TypeScript (si usas TS)
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
-## 🧞 Commands
+## ⚙️ Cómo Ejecutarlo
 
-All commands are run from the root of the project, from a terminal:
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/SergioGaray13/ProjectCard.git
+   cd sistema-experto
+   echo "# ProjectCard" >> README.md
+    git init
+    git add README.md
+    git commit -m "Portafolio"
+    git branch -M main
+    git remote add origin https://github.com/SergioGaray13/ProjectCard.git
+    git add .
+    git push -u origin main
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Proyecto en Producción
 
-## 👀 Want to learn more?
+![alt text](public/Proyecto.PNG "WebApp")
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-# ProjectCard
+🎓 Créditos
+Proyecto realizado por Sergio Garay Ingeniero en Sistemas como parte del curso de Sistemas Expertos de la carrera de Ingeniería en Sistemas.
+
+📬 Contacto
+Si tienes preguntas o deseas colaborar, puedes contactarme a través de:
+
+Correo: [sergio7garay@gmail.com]
+
+LinkedIn: [linkedin.com/in/tuusuario]
+
+Portafolio completo: [https://projectcard-dy9.pages.dev]
+
+© 2025 Sergio Garay. Todos los derechos reservados.
