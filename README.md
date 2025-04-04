@@ -4,7 +4,7 @@ Este repositorio forma parte de mi portafolio personal y presenta un proyecto de
 
 ## 📌 Descripción del Proyecto
 
-El sistema experto fue diseñado para **[(https://projectcard-dy9.pages.dev, por ejemplo: proyectos, blogs, portafolio, curriculum u hoja de vida, entre otros.]**. Utiliza una base de conocimientos y un motor de inferencia para proporcionar respuestas lógicas en función de las reglas establecidas.
+El sistema experto fue diseñado para **[https://projectcard-dy9.pages.dev, por ejemplo: proyectos, blogs, portafolio, curriculum u hoja de vida, entre otros.]**. Utiliza una base de conocimientos y un motor de inferencia para proporcionar respuestas lógicas en función de las reglas establecidas.
 
 ## 🚀 Funcionalidades
 
