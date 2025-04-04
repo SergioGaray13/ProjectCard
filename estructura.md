@@ -25,7 +25,8 @@
 │   │   │   ├── avamar.mdx
 │   │   │   ├── blog.mdx
 │   │   │   ├── compilador.mdx
-│   │   │   └── portafolio.mdx
+│   │   │   ├── portafolio.mdx
+│   │   │   └── terraform.mdx
 │   │
 │   ├── 📂 layouts/     # Plantillas para páginas (estructura base)
 │   │   └── Layout.astro
@@ -34,9 +35,9 @@
 │   │   ├── 📂 projects/
 │   │   │   └── [slug].astro
 │   │   ├── 404.astro # Error 404
-│   │   ├── about.astro # Página "Acerca de" → http://localhost:3000/about
-│   │   ├── contacts.astro
-│   │   └── index.astro # Página principal → http://localhost:3000/
+│   │   ├── about.astro # Página "Acerca de" → http://localhost:4321/about
+│   │   ├── contacts.astro # Página "Contacto" → http://localhost:4321/contacts
+│   │   └── index.astro # Página principal → http://localhost:4321/
 │   │
 │   ├── 📂 styles/      # Estilos CSS globales o específicos
 │   │   ├── contacts.css
