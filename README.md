@@ -1,6 +1,6 @@
-# 🧠 Portafolio de Proyecto - Sistema Experto
+# 🧠 Portafolio de Proyecto - Sistemas Expertos
 
-Este repositorio forma parte de mi portafolio personal y presenta un proyecto de **Sistema Experto** desarrollado como parte de mis estudios en Ingeniería en Sistemas. El sistema tiene como objetivo simular el razonamiento de un experto para brindar recomendaciones y tomar decisiones dentro de un dominio específico.
+Este repositorio forma parte de mi portafolio personal y presenta un proyecto de **Sistemas Expertos** desarrollado como parte de mis estudios en Ingeniería en Sistemas. El sistema tiene como objetivo simular el razonamiento de un experto para brindar recomendaciones y tomar decisiones dentro de un dominio específico.
 
 ## 📌 Descripción del Proyecto
 
@@ -16,12 +16,13 @@ El sistema experto fue diseñado para **[describe el dominio, por ejemplo: diagn
 
 ## 🛠️ Tecnologías Utilizadas
 
-- Lenguaje: **[Next.js/ CSS / Astro / TypeScript]**
+- Lenguaje: **[Next.js/ Astro / TypeScript]**
 - Frameworks: **[Ejemplo: TailWinds, Markdown]**
-- Herramientas: **[]**
+- Herramientas: **[CloudFlare, VSCode]**
 - Otros: **[Ejemplo: HTML, CSS, JSON, etc.]**
 
 ## 📂 Estructura del Proyecto
+
 📂 mi-portafolio/
 ├── 📂 public/          # Archivos estáticos (imágenes, fuentes, favicon, etc.)
 │   ├── 📂 images/      # Imágenes accesibles
@@ -105,9 +106,11 @@ Proyecto en Producción
 ![alt text](public/Proyecto.PNG "WebApp")
 
 🎓 Créditos
+
 Proyecto realizado por Sergio Garay Ingeniero en Sistemas como parte del curso de Sistemas Expertos de la carrera de Ingeniería en Sistemas.
 
 📬 Contacto
+
 Si tienes preguntas o deseas colaborar, puedes contactarme a través de:
 
 Correo: [sergio7garay@gmail.com]
