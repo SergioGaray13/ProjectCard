@@ -6,6 +6,7 @@ Este repositorio forma parte de mi portafolio personal y presenta un proyecto de
 
 El sistema experto fue diseñado para **[https://projectcard-dy9.pages.dev, por ejemplo: proyectos, blogs, portafolio, curriculum u hoja de vida, entre otros.]**. Utiliza una base de conocimientos y un motor de inferencia para proporcionar respuestas lógicas en función de las reglas establecidas.
 
+
 ## 🚀 Funcionalidades
 
 - ✅ Interfaz amigable para el usuario
@@ -16,10 +17,10 @@ El sistema experto fue diseñado para **[https://projectcard-dy9.pages.dev, por 
 
 ## 🛠️ Tecnologías Utilizadas
 
-- Lenguaje: **[Next.js/ Astro / TypeScript]**
-- Frameworks: **[Ejemplo: TailWinds, Markdown]**
-- Herramientas: **[CloudFlare, VSCode]**
-- Otros: **[Ejemplo: HTML, CSS, JSON, etc.]**
+- Lenguaje: **Next.js / Astro / TypeScript**
+- Frameworks: **Tailwind CSS, Markdown**
+- Herramientas: **Cloudflare Pages, VSCode**
+- Otros: **HTML, CSS, JSON, etc.**
 
 ## 📂 Estructura del Proyecto
 
@@ -91,7 +92,7 @@ El sistema experto fue diseñado para **[https://projectcard-dy9.pages.dev, por 
 1. Clona este repositorio:
    ```bash
    git clone https://github.com/SergioGaray13/ProjectCard.git
-   cd sistema-experto
+   cd ProjectCard
    echo "# ProjectCard" >> README.md
     git init
     git add README.md
@@ -100,6 +101,16 @@ El sistema experto fue diseñado para **[https://projectcard-dy9.pages.dev, por 
     git remote add origin https://github.com/SergioGaray13/ProjectCard.git
     git add .
     git push -u origin main
+
+2. Instala las dependencias:
+    ```bash
+        npm install
+
+3. Ejecuta el servidor de desarrollo:
+    ```bash
+        npm run dev
+
+4. Abre tu navegador en http://localhost:4321 para ver el sitio.
 
 📸 Proyecto en Producción
 
