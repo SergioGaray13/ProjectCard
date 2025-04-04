@@ -6,7 +6,6 @@ Este repositorio forma parte de mi portafolio personal y presenta un proyecto de
 
 El sistema experto fue diseñado para **[https://projectcard-dy9.pages.dev, por ejemplo: proyectos, blogs, portafolio, curriculum u hoja de vida, entre otros.]**. Utiliza una base de conocimientos y un motor de inferencia para proporcionar respuestas lógicas en función de las reglas establecidas.
 
-
 ## 🚀 Funcionalidades
 
 - ✅ Interfaz amigable para el usuario
@@ -20,7 +19,7 @@ El sistema experto fue diseñado para **[https://projectcard-dy9.pages.dev, por 
 - Lenguaje: **Next.js / Astro / TypeScript**
 - Frameworks: **Tailwind CSS, Markdown**
 - Herramientas: **Cloudflare Pages, VSCode**
-- Otros: **HTML, CSS, JSON, etc.**
+- Otros: **Web Component, CSS, JSON**
 
 ## 📂 Estructura del Proyecto
 
@@ -112,9 +111,13 @@ El sistema experto fue diseñado para **[https://projectcard-dy9.pages.dev, por 
 
 4. Abre tu navegador en http://localhost:4321 para ver el sitio.
 
+5. Ejecuta el servidor de producción:
+    ```bash
+        npm run build
+
 📸 Proyecto en Producción
 
-![alt text](public/Proyecto.PNG "WebApp")
+![alt text](public/Proyecto.PNG "Proyecto")
 
 🎓 Créditos
 
