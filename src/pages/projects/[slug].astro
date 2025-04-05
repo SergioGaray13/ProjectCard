@@ -2,12 +2,12 @@
 // src/pages/projects/[slug].astro
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
-import '../../styles/project.css'; //Estilo a los Proyectos de .mdx
+import data from '../../data/data.json'; // <--- importa el JSON
+import '../../styles/project.css';
 
-// Obtener todos los proyectos desde el contenido
 const projects = await getCollection('projects');
 
-// Generar las rutas estáticas para cada proyecto
+// Static paths
 export async function getStaticPaths() {
   const projects = await getCollection('projects');
   return projects.map((project) => ({
@@ -17,28 +17,46 @@ export async function getStaticPaths() {
 
 const { slug } = Astro.params;
 
-// Buscar el proyecto correspondiente
+// Buscar proyecto en el contenido de .mdx
 const project = projects.find((p) => p.data.slug === slug);
-
-if (!project) {
-  return Astro.redirect("/404"); // Redirigir si no se encuentra el proyecto
-}
+if (!project) return Astro.redirect("/404");
 
 const { title, description, techStack, url } = project.data;
+
+// Buscar información extendida en data.json
+const extraData = data.find((item) => item.slug === slug);
 ---
 
 <Layout>
   <article>
-    <h2>{title}</h2>
-    <p>{description}</p>
+    <h2>{extraData && extraData.title ? extraData.title : title}</h2>  <!-- Verificación explícita -->
+    <h3>{extraData && extraData.subTitle ? extraData.subTitle : ''}</h3>
+    <p>{extraData && extraData.content ? extraData.content : description}</p>  <!-- Verificación explícita -->
     <div>
       <h4>Technologías utilizadas:</h4>
       <ul>
-        {techStack.map((tech) => (
-          <li>{tech}</li>
-        ))}
+        {techStack && techStack.length > 0 ? (
+          techStack.map((tech) => (
+            <li>{tech}</li>
+          ))
+        ) : (
+          <li>No technologies listed</li>
+        )}
       </ul>
     </div>
+
+    {extraData && extraData.details && (
+      <section>
+        <h4>Detalles:</h4>
+        <ul>
+          {extraData.details.map((detail) => (
+            <li>{detail.title}: {detail.content}</li>
+          ))}
+        </ul>
+      </section>
+    )}
+
     <a href={url} target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
   </article>
 </Layout>
+---
